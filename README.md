@@ -1,7 +1,7 @@
-In general, the code is in Python 3.7 and requires having the matplotlib library to run. 
-Run CircleArea.py to get the area of the circle
-Run HeartArea.py to get the area of the heart minus the circle
-Run Bisection Method.py to get the roots and graph for problem 2
+In general, the code is in Python 3.7 and requires having the matplotlib library to run. <br/>
+Run CircleArea.py to get the area of the circle. <br/>
+Run HeartArea.py to get the area of the heart minus the circle. <br/>
+Run Bisection Method.py to get the roots and graph for problem 2. <br/>
 
 # Problem #1
 
@@ -71,7 +71,13 @@ Lower: 28283 points * 7 ops + 28283 (1 sum in numerator + 1 divisions by 2 + 1 m
 In the second problem we had to use a numerical method in order to find the roots of the function provided to us.
 
 ## Algorithm Description: Bisection
-To plot the graph I used the matplotlib library of python. The algorithm I used to find root was the bisection method. It takes a guess root and a range that surrounds the root and narrows down to the root within 0.0001 accuracy. 
+To plot the graph I used the matplotlib library of python. The algorithm I used to find root was the bisection method. It takes a guess root and a range that surrounds the root and narrows down to the root within 0.0001 accuracy. The guesses and the ranges are listed below:
+1st Root Guess: -0.85; Range: .05 <br/>
+2nd Root Guess: 1.26 ; Range: .02 <br/>
+3rd Root Guess: 1.42 ; Range: .02 <br/>
+4th Root Guess: 1.68 ; Range: .02 <br/>
+5th Root Guess: 1.80 ; Range: .02 <br/>
+6th Root Guess: 1.94 ; Range: .02 <br/>
 
 ## Pseudocode
 The pseudocode is provided in the image below from Professor Deng's notes
@@ -81,7 +87,7 @@ The pseudocode is provided in the image below from Professor Deng's notes
 The graph is in the image directly below
 <img src="graph.png" >
 
-Finally the roots are:
+Finally, the roots are: <br/>
 **-0.8243 <br/>
 1.2692 <br/>
 1.4143 <br/>
