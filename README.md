@@ -71,7 +71,7 @@ Lower: 28283 points * 7 ops + 28283 (1 sum in numerator + 1 divisions by 2 + 1 m
 In the second problem we had to use a numerical method in order to find the roots of the function provided to us.
 
 ## Algorithm Description: Bisection
-To plot the graph I used the matplotlib library of python. The algorithm I used to find root was the bisection method. It takes a guess root and a range that surrounds the root and narrows down to the root within 0.0001 accuracy. The guesses and the ranges are listed below:
+To plot the graph I used the matplotlib library of python. The algorithm I used to find root was the bisection method. It takes a guess root and a range that surrounds the root and narrows down to the root within 0.0001 accuracy. The guesses and the ranges are listed below: <br/>
 1st Root Guess: -0.85; Range: .05 <br/>
 2nd Root Guess: 1.26 ; Range: .02 <br/>
 3rd Root Guess: 1.42 ; Range: .02 <br/>
