@@ -13,7 +13,7 @@ In order to find the size of the disc, I decided to use numerical methods. From 
 
 <img src="Heart.PNG" width=500>
 
-I then used a for loop to go from the cusp of the heart, down the y-axis to check whether or not a circle with that point as its center would hit any of the pre-selected points on the circumference of the heart. As soon as a circle was found to have intersected a point on the heart, the algorithm would return the previous center that didn't intersect. This would be the center of the circle, which I would then subtract from the area of the heart by itself
+I then used a for loop to go from the cusp of the heart, down the y-axis to check whether or not a circle with that point as its center would hit any of the pre-selected points on the circumference of the heart. As soon as a circle was found to have intersected a point on the heart, the algorithm would return the previous center that didn't intersect. This would be the center of the circle, which I would then subtract from the area of the heart itself
 
 ## Algorithm Description: Finding the Area of the Heart
 I broke the heart up into two functions and placed them up against x-axis in order to do the rectangle rule on it. This is shown in the image below.
