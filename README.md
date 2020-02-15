@@ -15,4 +15,50 @@ I broke the heart up into two functions and placed them up against x-axis in ord
 
 <img src="heart_cut.PNG" width=500>
 
-I then used rectangles of width 0.0001 to find the total area of the heart. Finally, I subtracted the area of the circle and got my answer.
+I then used rectangles of width 0.0001 to find the total area of the heart. Finally, I subtracted the area of the circle that I got from the previous algorithm and got my answer.
+
+## Pseudocode:
+    def circle_radius():
+  
+      generate the centers along y-axis
+      generate the points along the lower portion of the heart
+       
+      for center in centers:
+          for point in heart_points:
+              if distance from heart point to center < potential radius
+                  return last valid center
+
+    def lower_area():
+        for points along x-axis separated by 0.0001 units:
+          Find f((a0 + b0)/2) and multiply by 0.0001 and then add to total area
+
+    def upper_area():
+      for points along x-axis separated by 0.0001 units:
+        Find g((a0 + b0)/2) and multiply by 0.0001 and then add to total area
+
+    def heart_area():
+        upper_area() + lower_area()
+    
+    radius = circle_radius
+    return heart_area() - pi * radius^2
+    
+## Answer:
+Circle Area Approximately: **3.3506**<br/>
+Heart Area Approximately: **6.2832**<br/>
+**Heart Minus Circle Area Approximately: 2.9325**<br/>
+        
+Total Floating Point Operations:
+5656 heart points * 5 operations +
+28284 center points * 1 operation +
+10328 center points * 5656 heart points * 5 ops to find distance = 292,132,404 operations <br/>
+
+Upper: 28283 points * 7 ops + 28283 (1 sum in numerator + 1 divisions by 2 + 1 multiply by 0.0001 + 1 adding to current answer) = 311,113 <br/>
+Lower: 28283 points * 7 ops + 28283 (1 sum in numerator + 1 divisions by 2 + 1 multiply by 0.0001 + 1 adding to current answer) = 311,113 <br/>
+
+1 operation to add upper and lower + 
+1 operation to square circle's radius +
+1 operation to multiply circle's radius by pi +
+1 operation to subtract circle from heart = **292,754,634 operations** <br/>
+
+
+
